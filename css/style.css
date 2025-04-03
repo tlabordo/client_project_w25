@@ -10,12 +10,11 @@ header {
 
 header>h1 {
     font-size: 24px;
+    margin: 10px;
 }
 
 header>img{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column: 1/-1;
+    width: 40%;
 }
 
 .skip {
@@ -36,8 +35,12 @@ header>img{
 
 
 nav li {
-    justify-content: center;
-    padding-right: 20px;
+    display: flex;
+    font-size: 12pt;
+    justify-content: space-around;
+    margin: 5px;
+    border: #00274C solid;
+    padding: 15px;
 }
 
 nav a {
@@ -48,19 +51,14 @@ nav a {
 
 nav {
     background-color: white;
-    padding: 25px 0;
+    padding: 10px 0;
 }
+
 
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    grid-row: 300px;
-    grid-row-gap: 15px;
-}
-
-.info {
-    grid-column: 1/-1;
+    grid-template-rows: auto;
     margin-right: 20px;
     margin-left: 20px;
     padding: 10px;
@@ -70,15 +68,20 @@ nav {
     border-radius: 15px;
     background-color: white;
     color: black;
+    align-items: baseline;
 }
 
+.info {
+    grid-column: 1/-1;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 10px;
+}
 
-.info img {
-    display: grid;
+ .info img {
     width: 45%;
-    margin: 20px;
-    justify-items: center;
-    align-items: center;
+    margin: 10px;
+    grid-column: 1/3;
 }
 
 .info h2 {
@@ -97,19 +100,17 @@ nav {
     color: #00274C;
 }
 
-.life-outside-classroom {
-    border: 3px dashed white;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
+#life-outside-classroom {
+    border: #00274C dashed;
 }
 
-.life-outside-classroom li {
-    margin-left: 30px;
-    text-align: left;
+#odei img{
+    grid-column: 1/4;
+    width: 100%;
 }
 
 footer{
+    display: grid;
     margin-right: 20px;
     margin-left: 20px;
     padding: 10px;
@@ -117,4 +118,9 @@ footer{
 
 footer a{
     color: #FFCB05;
+}
+
+footer p{
+    margin: 10px;
+    font-size: 10px;
 }
