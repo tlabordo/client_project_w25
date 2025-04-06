@@ -11,18 +11,18 @@
 
 <body>
 
-    <header>
+    <header class="header_container">
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <a class="skip" href="#welcome">Skip to Main content</a>
         <nav>
-            <ul>
+            <ul class="nav_links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="foodpantry.html">Food Pantry</a></li>
                 <li><a href="caps.html">CAPS</a></li>
-                <li><a href="firstgen.html">First Gen</a></li>
+                <li><a href="firstgen.html">First Generation</a></li>
             </ul>
         </nav>
-        <h1>Student Success Portal</h1>
+        <h1>WELCOME TO THE STUDENT SUCCESS PORTAL</h1>
     </header>
     <main>
         <div class="container">
@@ -64,6 +64,7 @@
                 <h3>Maize and Blue Cupboard</h3>
 
                 <img src="images/footer-donate-image.jpg" alt="Maize and Blue Cupboard">
+                <figcaption>Grab some food!</figcaption>
 
                 <p>Students are able to fuel their bodies effectively by grabbing the food they need from UM's
                     campus
@@ -74,24 +75,21 @@
                 <h2>Mental Health</h2>
                 <p>Maintaining your mental well-being is crucial for thriving in graduate school. Here are resources to
                     support your mental health:</p><br>
-                <article>
-                    <h3>Counseling and Psychological Services (CAPS):</h3>
-                    <p> Access individual counseling, group therapy, workshops, and crisis intervention services.</p>
-                    <br>
-                </article>
-                <article>
-                    <h3>Wellness Coaching:</h3>
-                    <p>Work with a wellness coach to develop strategies for managing stress, time, and overall
-                        well-being.</p><br>
-                </article>
-                <article>
-                    <h3>Mindfulness Resources:</h3>
-                    <p> Participate in mindfulness and meditation sessions to cultivate a calm and focused mind.</p><br>
-                </article>
-                <article>
-                    <h3>Support Groups:</h3>
-                    <p> Join peer support groups for shared experiences and collective coping strategies.</p><br>
-                </article>
+
+                <h3>Counseling and Psychological Services (CAPS):</h3>
+                <p> Access individual counseling, group therapy, workshops, and crisis intervention services.</p>
+                <br>
+
+                <h3>Wellness Coaching:</h3>
+                <p>Work with a wellness coach to develop strategies for managing stress, time, and overall
+                    well-being.</p><br>
+
+                <h3>Mindfulness Resources:</h3>
+                <p> Participate in mindfulness and meditation sessions to cultivate a calm and focused mind.</p><br>
+
+                <h3>Support Groups:</h3>
+                <p> Join peer support groups for shared experiences and collective coping strategies.</p><br>
+
             </div>
             <div class="info" id="life-outside-classroom">
                 <h2>Life Outside the Classroom</h2>
@@ -135,7 +133,11 @@
         <p>CAPS at University of Michigan <br>
             Phone: 734-764-8312 <br>
             Email: caps-uofm@umich.edu</p>
+            <p>© Copyrights <span id="year"></span> by University of Michigan. All rights reserved.</p>
     </footer>
 </body>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
 
 </html>

@@ -11,23 +11,23 @@
 
 <body>
 
-    <header>
+    <header class="header_container">
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-        <a class="skip" href="#welcome">Skip to Main content</a>
+        <a class="skip" href="#caps">Skip to Main content</a>
         <nav>
-            <ul>
+            <ul class="nav_links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="foodpantry.html">Food Pantry</a></li>
                 <li><a href="caps.html">CAPS</a></li>
-                <li><a href="firstgen.html">First Gen</a></li>
+                <li><a href="firstgen.html">First Generation</a></li>
             </ul>
         </nav>
-        <h1>Welcome to Counseling and Psychological Services (CAPS)</h1>
+        <h1>WELCOME TO COUNSELING AND PSYCHOLOGICAL SERVICES (CAPS)</h1>
 
     </header>
     <main>
         <div class="container" id="caps">
-            <div class="info">
+            <div class="info" id="what_caps">
                 <a href="https://caps.umich.edu/article/scheduling-appointment">Make an Appointment</a> <a
                     href="https://caps.umich.edu/article/urgent-support">Urgent Support</a>
                 <h2>What do we do?</h2>
@@ -53,12 +53,12 @@
                         spaces</a> available for students to connect with their counselor via
                     telecounseling. Please contact the front desk for more information on those private spaces.</p>
             </div>
-            <div class="info">
+            <div class="info" id="talk">
                 <h3><a href="https://caps.umich.edu/lets-talk">Let's Talk</a></h3>
                 <p>“Let's Talk” is a free program that supports students starting their mental health journeys. It
                     provides
                     casual meetings with counselors during specific drop-in times for initial support and advice.</p>
-                <img src="images/weeklyschedule.png" alt="Weekly Schedule graphic" width="600">
+            <img src="images/weeklyschedule.png" alt="Weekly Schedule graphic">
             </div>
             <div class="info">
                 <h3><a href="https://caps.umich.edu/individual-peer-counseling">Individual Peer Counseling</a></h3>
@@ -176,18 +176,27 @@
         <div></div>
     </main>
     <footer>
-        <p>University Health & Counseling: CAPS Counseling and Psychological Services</p>
-        <p>Michigan Union, Suite 4079 <br>
-            530 South State Street <br>
-            Ann Arbor, MI 48109</p>
-        <a href="https://caps.umich.edu/article/crisis-services-0">Urgent/Crisis Support 24/7</a>
-        <p> (734) 764-8312 (24hrs) <br>
-            caps-uofm@umich.edu </p>
-        <p> Monday - Thursday: 8am - 6pm <br>
-            Friday: 8am - 5pm <br>
-            Saturday & Sunday: Closed</p>
+        <p>MSI Academic Advising | <a
+                href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic
+                Advising </a><br>
+            Email: umsi.academicsuccess@umich.edu</p>
+        <p>University of Michigan | Maize and Blue Cupboard <br>
+            Address: 420 S State St Ann Arbor, MI 48109 <br>
+            Phone: 734-936-2794
+        </p>
+        <p>University of Michigan | First Generation <br>
+            Location: Third floor of the Student Activities Building in the Office of Academic Multicultural
+            Initiatives. <br>
+            Email us at firstgeninfo@umich.edu
+        </p>
+        <p>CAPS at University of Michigan <br>
+            Phone: 734-764-8312 <br>
+            Email: caps-uofm@umich.edu</p>
+            <p>© Copyrights <span id="year"></span> by University of Michigan. All rights reserved.</p>
     </footer>
 
 </body>
-
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
 </html>

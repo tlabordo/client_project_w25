@@ -11,15 +11,15 @@
 
 <body>
 
-    <header>
+    <header class="header_container">
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-        <a class = "skip" href="#welcome">Skip to Main content</a>
+        <a class = "skip" href="#food">Skip to Main content</a>
         <nav>
-            <ul>
+            <ul class="nav_links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="foodpantry.html">Food Pantry</a></li>
                 <li><a href="caps.html">CAPS</a></li>
-                <li><a href="firstgen.html">First Gen</a></li>
+                <li><a href="firstgen.html">First Generation</a></li>
             </ul>
         </nav>
         <h1>WELCOME TO MAIZE & BLUE CUPBOARD</h1>
@@ -76,9 +76,28 @@
 
     </main>
     <footer>
-        <p>University of Michigan Student Life</p>
+        <p>MSI Academic Advising | <a
+                href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic
+                Advising </a><br>
+            Email: umsi.academicsuccess@umich.edu</p>
+        <p>University of Michigan | Maize and Blue Cupboard <br>
+            Address: 420 S State St Ann Arbor, MI 48109 <br>
+            Phone: 734-936-2794
+        </p>
+        <p>University of Michigan | First Generation <br>
+            Location: Third floor of the Student Activities Building in the Office of Academic Multicultural
+            Initiatives. <br>
+            Email us at firstgeninfo@umich.edu
+        </p>
+        <p>CAPS at University of Michigan <br>
+            Phone: 734-764-8312 <br>
+            Email: caps-uofm@umich.edu</p>
+            <p>© Copyrights <span id="year"></span> by University of Michigan. All rights reserved.</p>
     </footer>
 
 </body>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
 
 </html>
