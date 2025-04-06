@@ -130,6 +130,16 @@ nav a {
     color: #00274C;
 }
 
+.contactform input{
+    margin-bottom: 10px;
+}
+
+.contactform legend{
+    font-weight: bold;
+    color: #00274C;
+    margin-bottom: 10px;
+}
+
 #life-outside-classroom {
     border: #00274C dashed;
 }
@@ -207,7 +217,7 @@ footer p {
     color: #FFCB05;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 725px) {
     header {
         display: flex;
         flex-direction: row;
@@ -215,7 +225,7 @@ footer p {
         justify-content: space-between;
     }
     header img {
-        width: 15%;
+        width: 10%;
     }
     .nav_links {
         background-color: #00274C;
@@ -254,6 +264,10 @@ footer p {
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    footer p{
+        font-size: 12px;
     }
 
 
