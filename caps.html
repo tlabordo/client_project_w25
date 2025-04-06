@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href='css/style.css'>
     <title>CAPS</title>
@@ -58,7 +62,7 @@
                 <p>“Let's Talk” is a free program that supports students starting their mental health journeys. It
                     provides
                     casual meetings with counselors during specific drop-in times for initial support and advice.</p>
-            <img src="images/weeklyschedule.png" alt="Weekly Schedule graphic">
+                <img src="images/weeklyschedule.png" alt="Weekly Schedule graphic">
             </div>
             <div class="info">
                 <h3><a href="https://caps.umich.edu/individual-peer-counseling">Individual Peer Counseling</a></h3>
@@ -129,7 +133,7 @@
                     multi-disciplinary and multi-theoretical values and practices that allow our diverse student body to
                     access care, to receive high quality services, and to take positive pathways to mental health.</p>
             </div>
-            <div class="info">
+            <div class="info" id="together">
                 <h3><a href="https://caps.umich.edu/article/togetherall">Togetherall</a></h3>
                 <img src="images/togetherall_triblock.png" alt="Togetherall Graphic" width="100">
                 <p>Recognizing that some students who are feeling isolated, depressed, or anxious may find it
@@ -142,7 +146,7 @@
                     health community that reaches and empowers a diverse population of students to anonymously seek and
                     provide support</p>
             </div>
-            <div class="info">
+            <div class="info" id="sv">
                 <h3><a href="https://caps.umich.edu/article/sexualized-violence">Sexualized Violence</a></h3>
                 <img src="images/img_4099_1_0.jpg" alt="Hope written in chalk and red rainboots" width="100">
                 <p>Sexual violence does not discriminate. Both survivors and perpetrators come from all genders,
@@ -150,7 +154,7 @@
                     races, ethnicities, sexual orientations, socio-economic status, and religions. Sexual violence is
                     defined as any unwanted sexual contact or interaction and can include:</p>
             </div>
-            <div class="info">
+            <div class="info" id="climate">
                 <h3><a href="https://caps.umich.edu/article/support-students-impacted-campus-climate-concerns">Support
                         For
                         Students Impacted By Campus Climate Concerns</a></h3>
@@ -192,11 +196,12 @@
         <p>CAPS at University of Michigan <br>
             Phone: 734-764-8312 <br>
             Email: caps-uofm@umich.edu</p>
-            <p>© Copyrights <span id="year"></span> by University of Michigan. All rights reserved.</p>
+        <p>© Copyrights <span id="year"></span> by University of Michigan. All rights reserved.</p>
     </footer>
 
 </body>
 <script>
     document.getElementById("year").innerHTML = new Date().getFullYear();
 </script>
+
 </html>
